@@ -10,7 +10,7 @@
 	 var t = $("#type").val();
 	 //alert(t);
      var msg=$("#txtMsg").val();
-	 $.post('/rabbit/setMessage',{msg:msg,type:t}, function(result){
+	 $.post('/rabbit/setObj',{msg:msg,type:t}, function(result){
 //          debugger;
 		 if(result.success){
 			 alert("发送成功");
